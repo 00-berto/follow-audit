@@ -72,28 +72,28 @@ export default function Limbo() {
 
     return (
         <>
-            <Flex direction={"column"} className={"min-h-screen mx-5 text-center select-none"} justify={"center"} align={"center"}>
-                <Text size={"6"} weight={"bold"}>chi non mi ricambia su instagram?</Text>
-                <Text size={"4"} weight={"medium"} mt={"1"}>
+            <Flex direction={"column"} className={"min-h-screen mx-5 text-center"} justify={"center"} align={"center"}>
+                <Text size={"6"} weight={"bold"} className={"select-none"}>chi non mi ricambia su instagram?</Text>
+                <Text size={"4"} weight={"medium"} mt={"1"} className={"select-none"}>
                     by {" "}
-                    <Link href={"https://instagram.com/albertocornacchia_"} className={"font-semibold text-red-700 sm:underline underline-none"}>berto</Link>
+                    <Link href={"https://instagram.com/albertocornacchia_"} className={"font-semibold text-red-700 sm:underline underline-none select-none"}>berto</Link>
                 </Text>
                 <br />
-                <Flex direction={"column"} mx={"auto"} gap={"1"}><Text align={"left"} ml={"1"}>lista dei seguiti (.json)</Text>
+                <Flex direction={"column"} mx={"auto"} gap={"1"}><Text align={"left"} ml={"1"} className={"select-none"}>lista dei seguiti (.json)</Text>
                     <input onChange={handleFollowing} type={"file"} accept={".json"} />
                 </Flex>
                 <br />
                 <Flex direction={"column"} mx={"auto"} gap={"1"}>
-                    <Text align={"left"} ml={"1"}>lista dei follower (.json)</Text>
+                    <Text align={"left"} ml={"1"} className={"select-none"}>lista dei follower (.json)</Text>
                     <input onChange={handleFollowers} type={"file"} accept={".json"} />
                 </Flex>
                 <br />
                 <Button onClick={submit} radius={"full"} variant={"soft"} size={"3"}>
-                    <Text mx={"3"}>invia</Text>
+                    <Text mx={"3"} className={"select-none"}>invia</Text>
                 </Button>
                 <div className="my-3" />
-                {error && <Text color={"red"} weight={"medium"}>errore: {error}</Text>}
-                {success && <Text color={"green"} weight={"medium"}>successo: il download dovrebbe iniziare a breve</Text>}
+                {error && <Text color={"red"} weight={"medium"} className={"select-none"}>errore: {error}</Text>}
+                {success && <Text color={"green"} weight={"medium"} className={"select-none"}>successo: il download dovrebbe iniziare a breve</Text>}
             </Flex>
         </>
     )
