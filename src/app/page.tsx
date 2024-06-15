@@ -72,7 +72,7 @@ export default function Limbo() {
 
     return (
         <>
-            <Flex direction={"column"} className={"min-h-screen mx-5 text-center"} justify={"center"} align={"center"}>
+            <Flex direction={"column"} className={"min-h-screen mx-5 text-center select-none"} justify={"center"} align={"center"}>
                 <Text size={"6"} weight={"bold"}>chi non mi ricambia su instagram?</Text>
                 <Text size={"4"} weight={"medium"} mt={"1"}>
                     by {" "}
